@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main>
+        <section class="corpo_calculadora">
+            <form class="calculadora">
+                <div class="calculadora_titulo"><h1>Calculadora de IMC</h1></div>
+                <div class="conteiner">
+                    <label class="label" for="nome">Nome:</label>
+                    <input name="nome" id="nome" class="Nome_input" type="text" placeholder="Joana" data-tipo="nome" required>
+                </div>
+                <div class="conteiner">
+                    <label class="label" for="peso">Peso em Kilo gramas:</label>
+                    <input name="peso" id="peso" class="input" type="text" placeholder="60.0" data-tipo="peso" required>
+                </div>
+                <div class="conteiner">
+                    <label class="label" for="altura">Altura em metros:</label>
+                    <input name="altura" id="altura" class="input" type="text" placeholder="1.75" data-tipo="altura" required>
+                </div>
+                <div class="calculadora_dados_botao">
+                    <button class="botao" data-tipo="botao">CALCULAR!</button>
+                </div>
+                <div class="avaliacao">
+                    <p class="avaliacao_titulo">Avaliação:</p>
+                    <div class="avalicao_texto" data-tipo="avaliacao"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src='./main.js'></script>   
+</body>
+</html>
